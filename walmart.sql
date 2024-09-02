@@ -76,7 +76,7 @@ select product_line,
 sum(total) as total_revenue from walmart.w_sales 
 group by product_line order by total_revenue desc; 
 
-#what is the city with the largest revenue? 
+#7.what is the city with the largest revenue? 
 select branch, city, sum(total) as total_revenue 
 from walmart.w_sales group by city, branch
 order by total_revenue desc; 
